@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Happy Birthday Mahi 🎉</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(circle at 10% 10%, #0f2027, #203a43, #2c5364);
+            font-family: "Poppins", sans-serif;
+            overflow: hidden;
+        }
+        /* Birthday Banner */
+        
+        .birthday-banner {
+            position: fixed;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 700;
+            color: #ffecb3;
+            text-shadow: 0 0 10px #ff4081, 0 0 20px #ff80ab, 0 0 40px #ff4081;
+            animation: glow 2s infinite alternate;
+            z-index: 1000;
+        }
+        
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff4081, 0 0 20px #ff80ab;
+            }
+            to {
+                text-shadow: 0 0 20px #ff80ab, 0 0 40px #ff4081;
+            }
+        }
+        /* Confetti */
+        
+        .confetti {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            background: hsl(var(--hue), 100%, 60%);
+            top: -10px;
+            animation: fall 3s linear forwards;
+            opacity: 0.9;
+            border-radius: 50%;
+            z-index: 999;
+        }
+        
+        @keyframes fall {
+            to {
+                transform: translateY(110vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+        /* Frames */
+        
+        .stage {
+            width: 340px;
+            height: 440px;
+            perspective: 1200px;
+            position: relative;
+        }
+        
+        .stack {
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+        }
+        
+        .photo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 92%;
+            height: 86%;
+            transform-style: preserve-3d;
+            border-radius: 14px;
+            overflow: hidden;
+            translate: -50% -50%;
+            cursor: pointer;
+            transition: all 0.6s ease;
+            box-shadow: 0 18px 40px rgba(2, 8, 23, 0.7);
+        }
+        
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .photo.active {
+            transform: translate3d(-50%, -60%, 160px) scale(1.05) rotateX(6deg);
+            z-index: 999;
+        }
+        
+        .watermark {
+            position: absolute;
+            bottom: 8px;
+            right: 12px;
+            color: #fff;
+            font-size: 12px;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 2px 6px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="birthday-banner">🎂 Happy Birthday Mahi 🎉</div>
+
+    <div class="stage" id="stage">
+        <div class="stack">
+            <div class="photo"><img src="images/WhatsApp Image 2025-09-16 at 22.24.40_d8f04210.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="images/WhatsApp Image 2025-09-16 at 22.24.40_eebe02d1.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="images/WhatsApp Image 2025-09-16 at 22.24.41_4afaec85.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="images/WhatsApp Image 2025-09-16 at 22.24.41_7b9a6460.jpg">
+                <div class="watermark">Mahi</div>
+                <img src="c:/Users/adars/OneDrive/Documents/Desktop/mahi pic/img1.jpg">
+                <img src="c:/Users/adars/OneDrive/Documents/Desktop/mahi pic/img2.jpg">
+                <img src="c:/Users/adars/OneDrive/Documents/Desktop/mahi pic/img3.jpg">
+                <img src="c:/Users/adars/OneDrive/Documents/Desktop/mahi pic/img4.jpg">
+                <img src="c:/Users/adars/OneDrive/Documents/Desktop/mahi pic/img5.jpg">
+            </div>
+            <div class="photo"><img src="images/WhatsApp Image 2025-09-16 at 22.24.41_b9795e7f.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="images/WhatsApp Image 2025-09-16 at 22.24.42_6ebed680.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="images/WhatsApp Image 2025-09-16 at 22.24.42_08f455eb.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="images/WhatsApp Image 2025-09-16 at 22.24.40_eebe02d1 - Copy.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="43e2df9f-c27f-47f0-bd44-e778dcab57a9.jpg
+">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="images/img2.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="images/img3.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="images/img4.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="images/img5.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="images/img6.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="images/img7.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+            <div class="photo"><img src="images/img8.jpg">
+                <div class="watermark">Mahi</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const photos = document.querySelectorAll(".photo");
+        photos.forEach(p => {
+            p.addEventListener("click", () => {
+                photos.forEach(x => x.classList.remove("active"));
+                p.classList.add("active");
+                launchConfetti();
+            });
+        });
+
+        function launchConfetti() {
+            for (let i = 0; i < 30; i++) {
+                const c = document.createElement("div");
+                c.className = "confetti";
+                c.style.left = Math.random() * 100 + "vw";
+                c.style.setProperty("--hue", Math.floor(Math.random() * 360));
+                document.body.appendChild(c);
+                setTimeout(() => c.remove(), 3000);
+            }
+        }
+    </script>
+</body>
+
+</html>
